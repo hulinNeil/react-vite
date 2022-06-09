@@ -1,7 +1,10 @@
 import { useState } from 'react';
 import '@/App.less';
 import styles from './test.less';
-import ss, { ReactComponent as Loading } from '@/logo.svg';
+import { ReactComponent as Loading } from '@/logo.svg';
+
+console.log(process.env.NODE_ENV);
+console.log(API_BASE_URL, GAME_URL);
 
 function App() {
   const [count, setCount] = useState(0);
