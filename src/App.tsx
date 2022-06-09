@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import '@/App.less';
 import styles from './test.less';
+import ss, { ReactComponent as Loading } from '@/logo.svg';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -8,6 +9,10 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <div style={{ fontSize: 20 }}>
+          <Loading />
+        </div>
+
         <p className={styles.aa}>Hello Vite + React!</p>
         <p>
           <button type="button" onClick={() => setCount((count) => count + 1)}>
